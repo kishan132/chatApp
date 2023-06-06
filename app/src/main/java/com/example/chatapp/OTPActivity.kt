@@ -148,6 +148,7 @@ class OTPActivity : AppCompatActivity() {
             override fun onFinish() {
                 binding.tvTimer.visibility = View.GONE
                 binding.btnResend.isEnabled = true
+                progressDialog.dismiss()
             }
         }.start()
     }
