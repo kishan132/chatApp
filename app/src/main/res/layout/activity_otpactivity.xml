@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/purple_200"
+        android:fontFamily="sans-serif-black"
+        android:text="verify"/>
+
+    <TextView
+        android:id="@+id/tvInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_below="@+id/tvInfo"
+        android:layout_marginTop="30dp"
+        android:text="@string/otpTitle"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_below="@+id/tvInfo1"
+        android:layout_marginTop="30dp"
+        android:text="time:"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTimer"
+        android:layout_margin="40dp"
+        android:letterSpacing="0.8"
+        android:imeActionId="6"
+        android:textSize="28dp"
+        android:imeActionLabel="Send"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:hint="------"
+        android:textAlignment="center"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etOTP"
+        android:text="verify"/>
+
+    <Button
+        android:id="@+id/btnResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnVerify"
+        android:enabled="false"
+        android:layout_marginTop="30dp"
+        android:text="resend"/>
+
+</RelativeLayout>

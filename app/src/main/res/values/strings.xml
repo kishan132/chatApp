@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="title">Welcome to ChatApp \n <font color="#00FF00">Verify your Number</font></string>
+    <string name="subTitle">Please enter 10 digit Phone Number to get OTP for Authentication</string>
+    <string name="otpTitle">Waiting for detect SMS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_logout">logout</string>
+</resources>
